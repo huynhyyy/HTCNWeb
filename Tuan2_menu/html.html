@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .wrapper {
+        height: 1000px;
+        width: 80%;
+        border: 1px solid black;
+        margin: 0 auto;
+    }
+    
+    .header {
+        height: 100px;
+        background-color: rgb(204, 192, 174);
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .p1 {
+        font-size: 30px;
+        margin-top: 30px;
+        margin-left: 40px;
+        text-shadow: rgb(82, 55, 14) 10px 10px 5px;
+    }
+    
+    .p2 {
+        font-size: 20px;
+        margin-top: 30px;
+        margin-right: 40px;
+    }
+    
+    .nav {
+        height: 50px;
+        background-color: cornflowerblue;
+    }
+    
+    .content {
+        height: 700px;
+        border-bottom: 1px solid black;
+    }
+    
+    .footer {
+        height: 150px;
+        background-color: rgb(32, 60, 112);
+    }
+    
+    .menu li {
+        position: relative;
+        width: 150px;
+        height: 50px;
+        list-style-type: none;
+        font-size: 30px;
+        line-height: 50px;
+        float: left;
+        text-align: center;
+    }
+    
+    .menu li:hover {
+        background-color: brown;
+    }
+    
+    .menu li a {
+        text-decoration: none;
+    }
+    
+    .menu li:hover>a {
+        color: coral;
+    }
+    
+    .sub-menu li {
+        background-color: rgb(95, 100, 109);
+        text-align: left;
+    }
+    
+    .sub-menu li a {
+        font-size: 25px;
+    }
+    
+    .menu .sub-menu li:hover {
+        background-color: rgb(60, 233, 75);
+    }
+    
+    .menu li .sub-menu li:hover>a {
+        color: white
+    }
+    
+    .sub-menu {
+        display: none;
+    }
+    
+    .menu li:hover>.sub-menu {
+        display: block;
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <p class="p1">Khoa CNTT</p>
+            <p class="p2">Trung tam tin hoc</p>
+        </div>
+        <div class="nav">
+            <ul class="menu">
+                <li>
+                    <a href="#">File</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Open file</a></li>
+                        <li><a href="#">Open folder</a></li>
+                        <li><a href="#">Open works</a></li>
+                        <li><a href="#">Open recent</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Edit</a></li>
+                <li>
+                    <a href="#">Selection</a></li>
+                <li><a href="#">View</a></li>
+            </ul>
+        </div>
+        <div class="content"></div>
+        <div class="footer"></div>
+    </div>
+</body>
+
+</html>
